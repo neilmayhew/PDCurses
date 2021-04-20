@@ -34,7 +34,7 @@ BUILD		= $(CC) $(CFLAGS) -I$(PDCURSES_SRCDIR)
 
 LINK		= $(CC)
 LDFLAGS		= $(LIBCURSES) $(SLIBS)
-RANLIB		= ranlib
+RANLIB		?= ranlib
 LIBCURSES	= pdcurses.a
 
 DEMOS		+= sdltest
