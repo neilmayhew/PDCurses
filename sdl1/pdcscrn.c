@@ -49,7 +49,7 @@ void PDC_retile(void)
     if (pdc_tileback)
         SDL_FreeSurface(pdc_tileback);
 
-    pdc_tileback = SDL_DisplayFormat(pdc_screen);
+    pdc_tileback = SDL_DisplayFormatAlpha(pdc_screen);
     if (pdc_tileback == NULL)
         return;
 
