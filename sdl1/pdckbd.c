@@ -2,6 +2,7 @@
 
 #include "pdcsdl.h"
 
+#include <stdlib.h>
 #include <string.h>
 
 static SDL_Event event;
